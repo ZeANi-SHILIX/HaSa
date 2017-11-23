@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity"
+    >
+
+
+    <ImageButton
+        android:id="@+id/imageButton2_hasa"
+        style="@android:style/Widget.DeviceDefault.Light.ImageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView2"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView"
+        android:onClick="minusHasa"
+        app:srcCompat="@android:drawable/arrow_down_float" />
+
+    <ImageButton
+        android:id="@+id/imageButton2_other"
+        style="@android:style/Widget.DeviceDefault.Light.ImageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView5"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView2"
+        android:onClick="minusOther"
+        app:srcCompat="@android:drawable/arrow_down_float" />
+
+    <ImageButton
+        android:id="@+id/imageButton2_potato"
+        style="@android:style/Widget.DeviceDefault.Light.ImageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/editText_potato"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView5"
+        android:onClick="minusPotato"
+        app:srcCompat="@android:drawable/arrow_down_float" />
+
+    <ImageButton
+        android:id="@+id/imageButton_hasa"
+        style="@android:style/Widget.DeviceDefault.Light.ImageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@android:drawable/arrow_up_float"
+        android:onClick="addHasa"
+        android:layout_below="@+id/textView"
+        android:layout_toEndOf="@+id/editText_hasa"
+        android:layout_alignBottom="@+id/editText_hasa" />
+
+    <ImageButton
+        android:id="@+id/imageButton_other"
+        style="@android:style/Widget.DeviceDefault.Light.ImageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@android:drawable/arrow_up_float"
+        android:onClick="addOther"
+        android:layout_alignTop="@+id/editText_other"
+        android:layout_toEndOf="@+id/editText_other"
+        android:layout_above="@+id/textView5" />
+
+    <ImageButton
+        android:id="@+id/imageButton_potato"
+        style="@android:style/Widget.DeviceDefault.Light.ImageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@android:drawable/arrow_up_float"
+        android:layout_below="@+id/textView5"
+        android:layout_toEndOf="@+id/editText_potato"
+        android:layout_alignBottom="@+id/editText_potato"
+        android:onClick="addPotato"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="BabilaStudio"
+        android:id="@+id/textView12"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/Hasa"
+        android:id="@+id/textView"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/editText_hasa"
+        android:layout_below="@+id/textView"
+        android:layout_alignEnd="@+id/textView5"
+        android:layout_toEndOf="@+id/imageButton2_potato" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/Other"
+        android:id="@+id/textView2"
+        android:layout_marginTop="34dp"
+        android:layout_below="@+id/editText_hasa"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/editText_other"
+        android:layout_below="@+id/textView2"
+        android:layout_alignEnd="@+id/editText_hasa"
+        android:layout_toEndOf="@+id/imageButton2_potato" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/Promotional"
+        android:id="@+id/textView3"
+        android:layout_above="@+id/editText4"
+        android:layout_alignStart="@+id/button" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/editText3"
+        android:layout_below="@+id/textView3"
+        android:layout_alignStart="@+id/textView4"
+        android:layout_toStartOf="@+id/textView4"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/Debt"
+        android:id="@+id/textView4"
+        android:layout_above="@+id/editText3"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/editText4"
+        android:layout_above="@+id/textView2"
+        android:layout_alignEnd="@+id/textView3"
+        android:layout_alignStart="@+id/textView3" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Calculation"
+        android:id="@+id/button"
+        android:layout_alignTop="@+id/textView2"
+        android:layout_alignEnd="@+id/editText3"
+        android:textSize="20dp"
+        android:layout_alignBottom="@+id/editText_other"
+        android:layout_toEndOf="@+id/textView12"
+        android:longClickable="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/Tomato"
+        android:id="@+id/textView5"
+        android:layout_below="@+id/button"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/editText_potato"
+        android:layout_below="@+id/textView5"
+        android:layout_alignEnd="@+id/editText_other"
+        android:layout_alignStart="@+id/editText_other" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/string_reset"
+        android:onClick="clear"
+        android:id="@+id/button_reset"
+        android:layout_alignEnd="@+id/button"
+        android:layout_alignTop="@+id/editText_potato"
+        android:layout_alignStart="@+id/button" />
+
+    <TextView
+        android:id="@+id/sum_static"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:layout_alignParentBottom="true" />
+
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/imageButton2_potato"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="7dp" />
+
+
+</RelativeLayout>
