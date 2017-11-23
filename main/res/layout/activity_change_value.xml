@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.hasa.ActivityChangeValue">
+
+    <TextView
+        android:id="@+id/ch_text1"
+        android:layout_width="200dp"
+        android:layout_height="51dp"
+        android:text="שינוי מחיר חסה"
+        android:textSize="30dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout"
+        android:layout_below="@+id/textView8"
+        android:layout_centerHorizontal="true">
+
+        <Button
+            android:layout_height="50dp"
+            android:layout_width="50dp"
+            android:id="@+id/ch_button2"
+            android:text="-"
+            android:textSize="25dp"/>
+
+        <TextView
+            android:id="@+id/ch_text_hasa"
+            android:text="00"
+            android:textSize="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/ch_button1"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:text="+"
+            android:textSize="25dp" />
+    </LinearLayout>
+    <TextView
+        android:text="חסה רומית"
+        android:textSize="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView8"
+        android:layout_marginTop="41dp"
+        android:layout_below="@+id/ch_text1"
+        android:layout_centerHorizontal="true" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout2"
+        android:layout_marginTop="46dp"
+        android:layout_below="@+id/linearLayout"
+        android:layout_centerHorizontal="true">
+
+        <Button
+            android:id="@+id/ch_button4"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:text="-"
+            android:textSize="25dp"/>
+
+        <TextView
+            android:id="@+id/ch_text_other"
+            android:text="00"
+            android:textSize="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/ch_button3"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:text="+"
+            android:textSize="25dp" />
+    </LinearLayout>
+    <TextView
+        android:text="שאר ירקות"
+        android:textSize="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="45dp"
+        android:id="@+id/textView9"
+        android:layout_above="@+id/linearLayout3"
+        android:layout_centerHorizontal="true" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="47dp"
+        android:id="@+id/linearLayout3"
+        android:layout_below="@+id/linearLayout2"
+        android:layout_alignStart="@+id/linearLayout2">
+
+        <Button
+            android:id="@+id/ch_button6"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:text="-"
+            android:textSize="25dp"/>
+
+        <TextView
+            android:id="@+id/ch_text_potato"
+            android:text="00"
+            android:textSize="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/ch_button5"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:text="+"
+            android:textSize="25dp" />
+    </LinearLayout>
+    <TextView
+        android:text="עגבניות שרי"
+        android:textSize="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="48dp"
+        android:layout_alignBottom="@+id/linearLayout3"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/textView16" />
+
+
+
+</RelativeLayout>
