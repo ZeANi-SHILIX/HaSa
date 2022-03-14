@@ -1,2 +1,2 @@
 # HaSa
-Calculate
+Basic app that halp for calculating the price of products. 
